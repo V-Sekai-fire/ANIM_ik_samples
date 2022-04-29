@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://d2q7b3rj850f6"]
+[gd_scene load_steps=6 format=3]
 
-[ext_resource type="PackedScene" uid="uid://boqqfaxglbjxg" path="res://ik_test/cases/robot_arm/Godot_CCDIK_Arm.glb" id="1"]
+[ext_resource type="PackedScene" path="res://ik_samples/cases/robot_arm/Godot_CCDIK_Arm.glb" id="1"]
 [ext_resource type="Script" path="res://addons/vsk_avatar/vsk_avatar_definition.gd" id="2_88of3"]
 
 [sub_resource type="SkeletonModification3DEWBIK" id="1"]

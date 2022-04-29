@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dsd1fsiij45dg"]
+[gd_scene load_steps=6 format=3]
 
-[ext_resource type="PackedScene" uid="uid://deuapcn1ywqqi" path="res://ik_test/cases/ewbik_3_chain/ewbik_3_bone_chain.glb" id="1"]
+[ext_resource type="PackedScene" path="res://ik_samples/cases/ewbik_3_chain/ewbik_3_bone_chain.glb" id="1"]
 [ext_resource type="Script" path="res://addons/vsk_avatar/vsk_avatar_definition.gd" id="2_08vfo"]
 
 [sub_resource type="SkeletonModification3DEWBIK" id="SkeletonModification3DEWBIK_7sy8c"]

@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcwbbcg3qwl3h"]
+[gd_scene load_steps=4 format=3]
 
-[ext_resource type="PackedScene" uid="uid://dyje3emkwdpd5" path="res://ik_test/cases/ewbik_rig/ewbik_rig.glb" id="1"]
+[ext_resource type="PackedScene" path="res://ik_samples/cases/ewbik_rig/ewbik_rig.glb" id="1"]
 
 [sub_resource type="SkeletonModification3DEWBIK" id="SkeletonModification3DEWBIK_2bjd1"]
 print_skeleton = true

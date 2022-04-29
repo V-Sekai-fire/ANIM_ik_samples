@@ -3,19 +3,19 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dyje3emkwdpd5"
-path="res://.godot/imported/ewbik_rig.glb-64e3a63e91fccc1704169737d5032995.scn"
+uid="uid://boqqfaxglbjxg"
+path="res://.godot/imported/Godot_CCDIK_Arm.glb-36bc4c9f15a57e56fe6a61e48be01a02.scn"
 
 [deps]
 
-source_file="res://ik_test/cases/ewbik_rig/ewbik_rig.glb"
-dest_files=["res://.godot/imported/ewbik_rig.glb-64e3a63e91fccc1704169737d5032995.scn"]
+source_file="res://ik_samples/cases/robot_arm/Godot_CCDIK_Arm.glb"
+dest_files=["res://.godot/imported/Godot_CCDIK_Arm.glb-36bc4c9f15a57e56fe6a61e48be01a02.scn"]
 
 [params]
 
 nodes/root_type="Node3D"
 nodes/root_name="Scene Root"
-nodes/root_scale=0.5
+nodes/root_scale=0.1
 nodes/generate_physics=false
 nodes/generate_navmesh=0
 physics/body_type=0
@@ -43,7 +43,7 @@ primitive/rotation=Vector3(0, 0, 0)
 meshes/ensure_tangents=true
 meshes/generate_lods=true
 meshes/create_shadow_meshes=true
-meshes/light_baking=0
+meshes/light_baking=2
 meshes/lightmap_texel_size=0.1
 skins/use_named_skins=true
 animation/import=true

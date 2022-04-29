@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bpqfa8do1ccj1"
-path="res://.godot/imported/Godot_Simple_Test_Rig.glb-8d2c2f9c4064421157d04041120ec2b9.scn"
+uid="uid://deuapcn1ywqqi"
+path="res://.godot/imported/ewbik_3_bone_chain.glb-cbccd75bac93821ba4045e37479c6b2b.scn"
 
 [deps]
 
-source_file="res://ik_test/cases/arm/Godot_Simple_Test_Rig.glb"
-dest_files=["res://.godot/imported/Godot_Simple_Test_Rig.glb-8d2c2f9c4064421157d04041120ec2b9.scn"]
+source_file="res://ik_samples/cases/ewbik_3_chain/ewbik_3_bone_chain.glb"
+dest_files=["res://.godot/imported/ewbik_3_bone_chain.glb-cbccd75bac93821ba4045e37479c6b2b.scn"]
 
 [params]
 
@@ -42,11 +42,11 @@ primitive/position=Vector3(0, 0, 0)
 primitive/rotation=Vector3(0, 0, 0)
 meshes/ensure_tangents=true
 meshes/generate_lods=true
-meshes/create_shadow_meshes=true
-meshes/light_baking=1
+meshes/create_shadow_meshes=false
+meshes/light_baking=2
 meshes/lightmap_texel_size=0.1
 skins/use_named_skins=true
 animation/import=true
-animation/fps=30
-import_script/path=""
+animation/fps=15
+import_script/path="res://addons/catboost/correct_bone_dir_post_scene_import.gd"
 _subresources={}
