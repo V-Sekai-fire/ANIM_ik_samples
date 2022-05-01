@@ -49,6 +49,7 @@ graph_offset = Vector2(23, -113)
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_ygads"]
 
 [node name="ewbik_3_bone_chain" instance=ExtResource( "1_udvgo" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 transform = Transform3D(0.982742, -0.184981, 0, 0.184981, 0.982742, 0, 0, 0, 1, 0, 0.0724593, 0)
@@ -96,7 +97,7 @@ transform = Transform3D(-0.84119, 0.538544, -0.0486562, -0.502776, -0.745843, 0.
 transform = Transform3D(1, 1.02445e-08, -8.9407e-08, 1.67638e-08, 1, -1.49012e-08, 0, -8.9407e-08, 1, 0.561412, -2.18779, 0.829389)
 
 [node name="C0" type="Position3D" parent="A0/B0" index="0"]
-transform = Transform3D(1, -7.45058e-09, 4.47035e-08, 8.56817e-08, 1, 1.49012e-08, -4.47035e-08, 0, 0.999999, -0.348433, -0.0406086, -1.12702)
+transform = Transform3D(1, -3.72529e-08, 7.45058e-08, 7.45058e-08, 1, 2.98023e-08, -2.98023e-08, 2.98023e-08, 0.999999, -0.348433, -0.0406086, -1.12702)
 
 [node name="AnimationTree" type="AnimationTree" parent="." index="2"]
 tree_root = SubResource( "AnimationNodeStateMachine_6d2ta" )
