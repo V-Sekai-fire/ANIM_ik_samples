@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwi0r27i5ors"]
+
+[ext_resource type="PackedScene" uid="uid://cyto6wi4ylyc6" path="res://ik_samples/cases/arm/Godot_Simple_Test_Rig.glb" id="1_te0lh"]
+
+[sub_resource type="SkeletonModification3DEWBIK" id="SkeletonModification3DEWBIK_y257t"]
+root_bone = "Bone_01"
+default_damp = 0.00174533
+pin_count = 1
+pins/0/name = "Bone_05"
+pins/0/target_node = NodePath("../../Position3D")
+pins/0/use_node_rotation = true
+pins/0/depth_falloff = 1.0
+pins/0/remove = false
+
+[sub_resource type="SkeletonModificationStack3D" id="SkeletonModificationStack3D_qb4hw"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource( "SkeletonModification3DEWBIK_y257t" )
+
+[node name="Godot_Simple_Test_Rig" instance=ExtResource( "1_te0lh" )]
+
+[node name="Skeleton3D" parent="Simple_Test_Rig_Armature" index="0"]
+bones/0/rotation = Quaternion(-0.735887, 0.159323, 0.336567, 0.565517)
+bones/0/scale = Vector3(0.999797, 0.999707, 0.999833)
+bones/1/position = Vector3(-1.00136e-05, 6.00583, 0.000271857)
+bones/1/rotation = Quaternion(-0.702152, 0.101705, 0.436908, 0.552946)
+bones/1/scale = Vector3(1.00103, 1.00074, 1.0009)
+bones/2/position = Vector3(0.000219345, 5.9993, -4.72069e-05)
+bones/2/rotation = Quaternion(-0.729804, 0.158688, 0.331196, 0.57664)
+bones/2/scale = Vector3(0.999929, 0.999924, 0.999873)
+bones/3/position = Vector3(-6.19888e-05, 5.99975, -1.35899e-05)
+bones/3/rotation = Quaternion(-0.72172, 0.180044, 0.380014, 0.549812)
+bones/3/scale = Vector3(0.999865, 0.999884, 0.999804)
+bones/4/position = Vector3(-0.000276566, 6.00125, -0.000113249)
+bones/4/rotation = Quaternion(-0.722136, 0.179418, 0.37958, 0.54977)
+bones/4/scale = Vector3(0.99984, 0.999803, 0.999828)
+modification_stack = SubResource( "SkeletonModificationStack3D_qb4hw" )
+
+[node name="Position3D" type="Position3D" parent="." index="1"]
+transform = Transform3D(0.926272, -0.376855, 0, 0.376855, 0.926272, 0, 0, 0, 1, 1.02066, 25.5291, 2.1025)
