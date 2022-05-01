@@ -47,6 +47,10 @@ config/process_priority=0
 import/fbx/use_fbx=false
 import/blender/blender_path="C:/Users/elee/scoop/apps/blender/current/blender.exe"
 
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
+
 [importer_defaults]
 
 texture={
