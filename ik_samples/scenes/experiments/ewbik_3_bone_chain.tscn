@@ -1,0 +1,108 @@
+[gd_scene load_steps=7 format=3 uid="uid://bn02outi1qxbs"]
+
+[ext_resource type="PackedScene" uid="uid://deuapcn1ywqqi" path="res://ik_samples/cases/ewbik_3_chain/ewbik_3_bone_chain.glb" id="1_udvgo"]
+
+[sub_resource type="SkeletonModification3DEWBIK" id="SkeletonModification3DEWBIK_2ewed"]
+root_bone = "A0"
+default_damp = 0.00174533
+pin_count = 3
+pins/0/name = "A3"
+pins/0/target_node = NodePath("../../A3")
+pins/0/use_node_rotation = true
+pins/0/depth_falloff = 1.0
+pins/0/remove = false
+pins/1/name = "B3"
+pins/1/target_node = NodePath("../../B3")
+pins/1/use_node_rotation = true
+pins/1/depth_falloff = 1.0
+pins/1/remove = false
+pins/2/name = "C3"
+pins/2/target_node = NodePath("../../C3")
+pins/2/use_node_rotation = true
+pins/2/depth_falloff = 1.0
+pins/2/remove = false
+
+[sub_resource type="SkeletonModificationStack3D" id="SkeletonModificationStack3D_2qomc"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource( "SkeletonModification3DEWBIK_2ewed" )
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_g21fq"]
+graph_offset = Vector2(-876.398, -140.39)
+nodes/output/position = Vector2(720, 60)
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_6d2ta"]
+states/BlendTree/node = SubResource( "AnimationNodeBlendTree_g21fq" )
+states/BlendTree/position = Vector2(721, 74)
+graph_offset = Vector2(23, -113)
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_ygads"]
+
+[node name="ewbik_3_bone_chain" instance=ExtResource( "1_udvgo" )]
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0724593, 0)
+bones/0/rotation = Quaternion(0.0246297, 0.0164941, -0.720996, 0.692305)
+bones/0/scale = Vector3(0.999997, 0.999999, 0.999992)
+bones/1/position = Vector3(-1.30385e-08, 0.926508, 2.26311e-07)
+bones/1/rotation = Quaternion(-0.00887281, -0.0483261, -0.0203366, 0.998585)
+bones/1/scale = Vector3(1.00004, 1.00004, 1.00004)
+bones/2/position = Vector3(1.93715e-07, 1.07368, 1.72295e-08)
+bones/2/rotation = Quaternion(-0.00274683, 0.0135717, 0.00613792, 0.999885)
+bones/2/scale = Vector3(0.999992, 0.999989, 0.999996)
+bones/3/position = Vector3(7.45058e-09, 1.00001, -5.58794e-08)
+bones/3/rotation = Quaternion(-0.00342148, -0.00356178, 0.00883024, 0.999949)
+bones/3/scale = Vector3(0.999987, 0.999989, 0.999975)
+bones/4/position = Vector3(-1.23866e-07, 1.00002, -7.82311e-08)
+bones/4/rotation = Quaternion(-0.00310407, -0.096767, 0.00264387, 0.995299)
+bones/4/scale = Vector3(0.999999, 1, 0.999995)
+bones/5/position = Vector3(-3.09199e-07, 0.982245, -7.45058e-08)
+bones/5/rotation = Quaternion(-1.63886e-05, 0.0915386, 0.0260376, 0.995461)
+bones/5/scale = Vector3(0.999996, 0.999996, 0.999999)
+bones/6/position = Vector3(-2.68221e-07, 1.00002, 2.23517e-08)
+bones/6/rotation = Quaternion(-0.002163, -0.0023508, -0.00969153, 0.999948)
+bones/6/scale = Vector3(0.999986, 0.999987, 0.999974)
+bones/7/position = Vector3(-1.3411e-06, 1.00003, -4.47035e-08)
+bones/7/rotation = Quaternion(-0.0027245, -0.00103647, 0.00678108, 0.999973)
+bones/7/scale = Vector3(1.00002, 1.00002, 1.00001)
+bones/8/position = Vector3(-1.51806e-07, 1.00003, 1.15484e-07)
+bones/8/rotation = Quaternion(0.000975639, -0.00263208, 0.553502, 0.832843)
+bones/8/scale = Vector3(1.00001, 1, 0.999987)
+bones/9/position = Vector3(7.15256e-06, 1.00002, -1.86265e-08)
+bones/9/rotation = Quaternion(0.000393843, -0.00257371, 0.222116, 0.975017)
+bones/9/scale = Vector3(1, 1, 0.999986)
+bones/10/position = Vector3(-1.43051e-05, 0.999987, 2.23517e-07)
+bones/10/rotation = Quaternion(0.000127917, -0.00213958, 0.000317868, 0.999998)
+bones/10/scale = Vector3(0.999995, 0.999994, 0.999995)
+bones/11/position = Vector3(6.67572e-06, 1.00002, 1.11759e-07)
+bones/11/rotation = Quaternion(0.00141493, -0.00389553, 3.65758e-05, 0.999991)
+bones/11/scale = Vector3(0.999996, 0.999996, 0.999999)
+modification_stack = SubResource( "SkeletonModificationStack3D_2qomc" )
+
+[node name="A3" type="BoneAttachment3D" parent="Armature/Skeleton3D" index="1"]
+transform = Transform3D(-0.0512919, 0.998464, 0.0216194, -0.998537, -0.0516579, 0.0167254, 0.0178154, -0.0207296, 0.999633, 3.06737, -0.167816, -0.0254486)
+bone_name = "A3"
+bone_idx = 3
+
+[node name="B3" type="BoneAttachment3D" parent="Armature/Skeleton3D" index="2"]
+transform = Transform3D(-8.77509e-05, 0.999076, 0.043384, -0.999452, -0.00153998, 0.0334245, 0.0334609, -0.0433573, 0.998484, 7.04533, -0.276086, -0.144381)
+bone_name = "B3"
+bone_idx = 7
+
+[node name="C3" type="BoneAttachment3D" parent="Armature/Skeleton3D" index="3"]
+transform = Transform3D(1.00001, 0.000249689, -7.89808e-06, -0.000252232, 0.999852, 0.0175612, 1.12024e-05, -0.017561, 0.999819, 4.50106, 2.68073, -0.112963)
+bone_name = "C3"
+bone_idx = 11
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="1"]
+tree_root = SubResource( "AnimationNodeStateMachine_6d2ta" )
+parameters/playback = SubResource( "AnimationNodeStateMachinePlayback_ygads" )
+
+[node name="A3" type="Position3D" parent="." index="2"]
+transform = Transform3D(-0.0417941, 0.999126, -3.50031e-07, -0.999127, -0.041794, -4.23861e-07, -4.27572e-07, 3.25387e-07, 1, 3.07104, -0.103716, 1.06727e-06)
+
+[node name="B3" type="Position3D" parent="." index="3"]
+transform = Transform3D(-1.47149e-07, 1, -3.31483e-07, -1, -4.09782e-08, -1.33118e-07, -1.64369e-07, 3.26833e-07, 1, 7.05137, -0.201285, 2.38654e-06)
+
+[node name="C3" type="Position3D" parent="." index="4"]
+transform = Transform3D(1, 7.45058e-07, -1.97373e-08, -5.96046e-07, 1, 4.96126e-08, 1.26794e-08, -5.98747e-08, 1, 4.50187, 2.75651, 1.38676e-06)
