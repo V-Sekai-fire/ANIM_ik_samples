@@ -7,6 +7,3 @@
 [submodule "addons/math_util"]
 	path = addons/math_util
 	url = https://github.com/V-Sekai/math_util.git
-[submodule "addons/entity_manager"]
-	path = addons/entity_manager
-	url = https://github.com/V-Sekai/entity_manager.git
