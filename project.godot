@@ -9,12 +9,48 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "EditorImportPlugin",
+"class": &"MCPImporter",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mcp_importer.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapConstants",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_constants.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapFunctions",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_functions.gd"
+}, {
+"base": "Node",
+"class": &"MocapManager",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_manager.gd"
+}, {
+"base": "EditorPlugin",
+"class": &"MocapManagerPlugin",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_manager_plugin.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapRecording",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_recording.gd"
+}, {
 "base": "Node3D",
 "class": &"VRMTopLevel",
 "language": &"GDScript",
 "path": "res://addons/vrm/vrm_toplevel.gd"
 }]
 _global_script_class_icons={
+"MCPImporter": "",
+"MocapConstants": "",
+"MocapFunctions": "",
+"MocapManager": "",
+"MocapManagerPlugin": "",
+"MocapRecording": "",
 "VRMTopLevel": ""
 }
 
